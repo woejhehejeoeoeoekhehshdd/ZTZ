@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.8
 
 RUN git clone https://github.com/Zelzal-SC/ZTZ.git /root/zelz
 

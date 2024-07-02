@@ -1,4 +1,4 @@
-FROM zelzal-sc/ztz:slim-buster
+FROM python:3.10
 
 RUN git clone https://github.com/Zelzal-SC/ZTZ.git /root/zelz
 

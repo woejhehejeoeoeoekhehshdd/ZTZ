@@ -61,12 +61,12 @@ def telethon_session():
 
     # logging in
     try:
-        with TelegramClient(StringSession(), API_ID, API_HASH) as zthon:
-            print("Generating a string session for •ZThon•")
+        with TelegramClient(StringSession(), API_ID, API_HASH) as 𝗛𝘼𝗠𝙤𝘿:
+            print("Generating a string session for •𝗛𝘼𝗠𝙤𝘿•")
             try:
-                zthon.send_message(
+                𝗛𝘼𝗠𝙤𝘿.send_message(
                     "me",
-                    f"**- هـذا هو كـود سيشـن تيليثـون الخـاص بـك ☑️**:\n\n`{zthon.session.save()}`\n\n**- لا تشـارك هـذا الكـود مع اي احـد ⚠️؟!**\n**- فقـط قم بنسخـه ولصقـه في مربعـات التنصيب 🛃**\n\n**- سـورس زدثــون : @ZThon**",
+                    f"**- هـذا هو كـود سيشـن تيليثـون الخـاص بـك ☑️**:\n\n`{𝗛𝘼𝗠𝙤𝘿.session.save()}`\n\n**- لا تشـارك هـذا الكـود مع اي احـد ⚠️؟!**\n**- فقـط قم بنسخـه ولصقـه في مربعـات التنصيب 🛃**\n\n**- سـورس زدثــون : @ZThon**",
                 )
                 print(
                     "Your SESSION has been generated. Check your Telegram saved messages!"
@@ -74,7 +74,7 @@ def telethon_session():
                 return
             except UserIsBotError:
                 print("You are trying to Generate Session for your Bot's Account?")
-                print("Here is That \n{zthon.session.save()}\n\n")
+                print("Here is That \n{𝗛𝘼𝗠𝙤𝘿.session.save()}\n\n")
                 print("NOTE: You can't use that as User Session..")
     except ApiIdInvalidError:
         print(
@@ -90,7 +90,7 @@ def telethon_session():
     except Exception as er:
         print("Unexpected Error Occurred while Creating Session")
         print(er)
-        print("If you think It as a Bug, Report to @zzzzzl1l\n\n")
+        print("If you think It as a Bug, Report to @jjjve\n\n")
 
 
 def pyro_session():
@@ -111,7 +111,7 @@ def pyro_session():
     # generate a session
     API_ID, API_HASH = get_api_id_and_hash()
     print("Enter phone number when asked.\n\n")
-    with Client(name="zthon", api_id=API_ID, api_hash=API_HASH, in_memory=True) as pyro:
+    with Client(name="𝗛𝘼𝗠𝙤𝘿", api_id=API_ID, api_hash=API_HASH, in_memory=True) as pyro:
         ss = pyro.export_session_string()
         pyro.send_message(
             "me",
@@ -126,7 +126,7 @@ def main():
     try:
         type_of_ss = int(
             input(
-                "\nZThon Userbot\n\nWhich session do you want to generate?\n1. Telethon Session.\n2. Pyrogram Session.\n\nEnter choice:  "
+                "\n𝗛𝘼𝗠𝙤𝘿 Userbot\n\nWhich session do you want to generate?\n1. Telethon Session.\n2. Pyrogram Session.\n\nEnter choice:  "
             )
         )
     except Exception as e:
